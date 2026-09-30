@@ -1,147 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 교무수첩</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI 교무수첩</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-mark">AI</div>
-        <div>
-          <strong>교무수첩</strong>
-          <span>Teacher Planner</span>
-        </div>
-      </div>
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">AI</div><div><strong>교무수첩</strong><span>Teacher Planner</span></div></div>
+  <nav class="main-nav">
+    <button class="nav-item active"><span>▦</span> 주간 주안</button>
+    <button class="nav-item"><span>◷</span> 오늘</button>
+    <button class="nav-item"><span>□</span> 월간</button>
+    <button class="nav-item"><span>◌</span> 일정</button>
+    <button class="nav-item"><span>✓</span> 업무</button>
+    <button class="nav-item"><span>◇</span> 평가</button>
+    <button class="nav-item"><span>⌕</span> 자료</button>
+  </nav>
+  <button class="settings-button"><span>⚙</span> 설정</button>
+</aside>
 
-      <nav class="main-nav">
-        <button class="nav-item active"><span>▦</span> 주간 주안</button>
-        <button class="nav-item"><span>◷</span> 오늘</button>
-        <button class="nav-item"><span>□</span> 월간</button>
-        <button class="nav-item"><span>◌</span> 일정</button>
-        <button class="nav-item"><span>✓</span> 업무</button>
-        <button class="nav-item"><span>◇</span> 평가</button>
-        <button class="nav-item"><span>⌕</span> 자료</button>
-      </nav>
-
-      <button class="settings-button"><span>⚙</span> 설정</button>
-    </aside>
-
-    <main class="main-content">
-      <header class="topbar">
-        <div class="title-area">
-          <div class="eyebrow">주간 주안</div>
-          <h1>2026년 10월 1주</h1>
-        </div>
-        <div class="top-actions">
-          <button class="today-button">오늘</button>
-          <button class="arrow-button">‹</button>
-          <button class="arrow-button">›</button>
-        </div>
-      </header>
-
-      <section class="planner-card">
-        <div class="calendar-header">
-          <div class="time-label">시간</div>
-          <div>월<br><small>10/5</small></div>
-          <div>화<br><small>10/6</small></div>
-          <div>수<br><small>10/7</small></div>
-          <div>목<br><small>10/8</small></div>
-          <div>금<br><small>10/9</small></div>
-        </div>
-
-        <div class="timeline">
-          <div class="time-cell period"><strong>1교시</strong><span>09:00–09:40</span></div>
-          <div class="lesson mint"><strong>국어</strong><span>주장하는 글 읽기</span><small>12차시</small></div>
-          <div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>5–6차시</small></div>
-          <div class="lesson mint"><strong>국어</strong><span>주장하는 글 읽기</span><small>13차시</small></div>
-          <div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>7차시</small></div>
-          <div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>운동장</small></div>
-
-          <div class="time-cell period"><strong>2교시</strong><span>09:50–10:30</span></div>
-          <div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>7차시</small></div>
-          <div class="lesson blue"><strong>영어</strong><span>What do you want?</span><small>4차시</small></div>
-          <div class="lesson sand"><strong>사회</strong><span>우리 지역의 모습</span><small>8차시</small></div>
-          <div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>14차시</small></div>
-          <div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>8차시</small></div>
-
-          <div class="time-cell break"><strong>중간놀이</strong><span>10:30–10:50</span></div>
-          <div class="break-fill">쉬는 시간</div>
-          <div class="break-fill">쉬는 시간</div>
-          <div class="break-fill">쉬는 시간</div>
-          <div class="break-fill">쉬는 시간</div>
-          <div class="break-fill">쉬는 시간</div>
-
-          <div class="time-cell period"><strong>3교시</strong><span>10:50–11:30</span></div>
-          <div class="lesson blue"><strong>영어</strong><span>Let's play together</span><small>5차시</small></div>
-          <div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>15차시</small></div>
-          <div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>운동장</small></div>
-          <div class="lesson teal"><strong>과학</strong><span>물질의 상태</span><small>3차시</small></div>
-          <div class="lesson blue"><strong>영어</strong><span>Let's play together</span><small>6차시</small></div>
-
-          <div class="time-cell period"><strong>4교시</strong><span>11:35–12:15</span></div>
-          <div class="lesson sand"><strong>사회</strong><span>우리 지역의 모습</span><small>9차시</small></div>
-          <div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>9차시</small></div>
-          <div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>16차시</small></div>
-          <div class="lesson blue"><strong>영어</strong><span>Let's play together</span><small>7차시</small></div>
-          <div class="lesson teal"><strong>과학</strong><span>물질의 상태</span><small>4차시</small></div>
-
-          <div class="time-cell period"><strong>5교시</strong><span>12:20–13:00</span></div>
-          <div class="lesson teal"><strong>과학</strong><span>물질의 상태</span><small>2차시</small></div>
-          <div class="lesson sand"><strong>사회</strong><span>우리 지역의 모습</span><small>10차시</small></div>
-          <div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>10차시</small></div>
-          <div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>강당</small></div>
-          <div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>17차시</small></div>
-
-          <div class="time-cell lunch"><strong>점심</strong><span>13:00–14:00</span></div>
-          <div class="lunch-fill">점심시간</div>
-          <div class="lunch-fill">점심시간</div>
-          <div class="lunch-fill">점심시간</div>
-          <div class="lunch-fill">점심시간</div>
-          <div class="lunch-fill">점심시간</div>
-
-          <div class="time-cell period"><strong>6교시</strong><span>14:00–14:40</span></div>
-          <div class="empty-cell">—</div>
-          <div class="lesson violet"><strong>창체</strong><span>학급회의</span><small>자율활동</small></div>
-          <div class="empty-cell">—</div>
-          <div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>운동장</small></div>
-          <div class="empty-cell">—</div>
-        </div>
-      </section>
-
-      <section class="supplies">
-        <div class="supply-card">
-          <div class="section-title">
-            <div>
-              <span class="eyebrow">PREPARATION</span>
-              <h2>교사 준비물</h2>
-            </div>
-            <button>＋ 추가</button>
-          </div>
-          <label><input type="checkbox"> 주장하는 글 활동지 출력</label>
-          <label><input type="checkbox"> 분수 막대</label>
-          <label><input type="checkbox"> 체육용 조끼</label>
-        </div>
-
-        <div class="supply-card">
-          <div class="section-title">
-            <div>
-              <span class="eyebrow">STUDENTS</span>
-              <h2>학생 준비물</h2>
-            </div>
-            <button>＋ 추가</button>
-          </div>
-          <label><input type="checkbox"> 국어 학습지</label>
-          <label><input type="checkbox"> 수학 교과서</label>
-          <label><input type="checkbox"> 체육복</label>
-        </div>
-      </section>
-    </main>
+<main class="main-content">
+<header class="topbar">
+  <div><div class="eyebrow">주간 주안</div><h1>2026년 10월 1주</h1></div>
+  <div class="top-actions">
+    <button class="import-button" id="openImport">자료 가져오기 <b>AI</b></button>
+    <button class="today-button">오늘</button><button class="arrow-button">‹</button><button class="arrow-button">›</button>
   </div>
+</header>
 
-  <script src="js/app.js"></script>
+<section class="planner-card">
+<div class="calendar-header"><div class="time-label">시간</div><div>월<br><small>10/5</small></div><div>화<br><small>10/6</small></div><div>수<br><small>10/7</small></div><div>목<br><small>10/8</small></div><div>금<br><small>10/9</small></div></div>
+<div class="timeline">
+<div class="time-cell period"><strong>1교시</strong><span>09:00–09:40</span></div>
+<div class="lesson mint"><strong>국어</strong><span>주장하는 글 읽기</span><small>12차시</small></div><div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>5–6차시</small></div><div class="lesson mint"><strong>국어</strong><span>주장하는 글 읽기</span><small>13차시</small></div><div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>7차시</small></div><div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>운동장</small></div>
+<div class="time-cell period"><strong>2교시</strong><span>09:50–10:30</span></div>
+<div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>7차시</small></div><div class="lesson blue"><strong>영어</strong><span>What do you want?</span><small>4차시</small></div><div class="lesson sand"><strong>사회</strong><span>우리 지역의 모습</span><small>8차시</small></div><div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>14차시</small></div><div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>8차시</small></div>
+<div class="time-cell break"><strong>중간놀이</strong><span>10:30–10:50</span></div><div class="break-fill">쉬는 시간</div><div class="break-fill">쉬는 시간</div><div class="break-fill">쉬는 시간</div><div class="break-fill">쉬는 시간</div><div class="break-fill">쉬는 시간</div>
+<div class="time-cell period"><strong>3교시</strong><span>10:50–11:30</span></div>
+<div class="lesson blue"><strong>영어</strong><span>Let's play together</span><small>5차시</small></div><div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>15차시</small></div><div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>운동장</small></div><div class="lesson teal"><strong>과학</strong><span>물질의 상태</span><small>3차시</small></div><div class="lesson blue"><strong>영어</strong><span>Let's play together</span><small>6차시</small></div>
+<div class="time-cell period"><strong>4교시</strong><span>11:35–12:15</span></div>
+<div class="lesson sand"><strong>사회</strong><span>우리 지역의 모습</span><small>9차시</small></div><div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>9차시</small></div><div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>16차시</small></div><div class="lesson blue"><strong>영어</strong><span>Let's play together</span><small>7차시</small></div><div class="lesson teal"><strong>과학</strong><span>물질의 상태</span><small>4차시</small></div>
+<div class="time-cell period"><strong>5교시</strong><span>12:20–13:00</span></div>
+<div class="lesson teal"><strong>과학</strong><span>물질의 상태</span><small>2차시</small></div><div class="lesson sand"><strong>사회</strong><span>우리 지역의 모습</span><small>10차시</small></div><div class="lesson lavender"><strong>수학</strong><span>분수의 덧셈</span><small>10차시</small></div><div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>강당</small></div><div class="lesson mint"><strong>국어</strong><span>주장하는 글 쓰기</span><small>17차시</small></div>
+<div class="time-cell lunch"><strong>점심</strong><span>13:00–14:00</span></div><div class="lunch-fill">점심시간</div><div class="lunch-fill">점심시간</div><div class="lunch-fill">점심시간</div><div class="lunch-fill">점심시간</div><div class="lunch-fill">점심시간</div>
+<div class="time-cell period"><strong>6교시</strong><span>14:00–14:40</span></div>
+<div class="empty-cell">—</div><div class="lesson violet"><strong>창체</strong><span>학급회의</span><small>자율활동</small></div><div class="empty-cell">—</div><div class="lesson peach"><strong>체육</strong><span>축구형 게임</span><small>운동장</small></div><div class="empty-cell">—</div>
+</div></section>
+
+<section class="supplies">
+<div class="supply-card"><div class="section-title"><div><span class="eyebrow">PREPARATION</span><h2>교사 준비물</h2></div><button>＋ 추가</button></div><label><input type="checkbox"> 주장하는 글 활동지 출력</label><label><input type="checkbox"> 분수 막대</label><label><input type="checkbox"> 체육용 조끼</label></div>
+<div class="supply-card"><div class="section-title"><div><span class="eyebrow">STUDENTS</span><h2>학생 준비물</h2></div><button>＋ 추가</button></div><label><input type="checkbox"> 국어 학습지</label><label><input type="checkbox"> 수학 교과서</label><label><input type="checkbox"> 체육복</label></div>
+</section>
+</main>
+</div>
+
+<div class="modal-backdrop" id="importModal" aria-hidden="true">
+<section class="import-modal">
+<button class="modal-close" id="closeImport">×</button>
+<div class="eyebrow">AI IMPORT</div>
+<h2>학교 자료를 넣어주세요</h2>
+<p class="modal-desc">자료를 올리면 AI가 문서의 구조와 내용을 읽고, 과목·시간표·학사일정·교육과정 등을 구분해 앱 데이터로 정리합니다.</p>
+<label class="dropzone" id="dropzone"><input id="fileInput" type="file" multiple accept=".pdf,.hwp,.hwpx,.doc,.docx,.xls,.xlsx,.csv,.png,.jpg,.jpeg,.webp,.txt"><span class="upload-icon">＋</span><strong>파일을 여기에 놓거나 클릭해서 선택</strong><small>PDF · HWP · HWPX · Word · Excel · 이미지 · TXT</small></label>
+<div class="file-list" id="fileList"></div>
+<div class="analysis-status" id="analysisStatus"></div>
+<div class="result-box" id="resultBox"></div>
+<div class="modal-actions"><button class="secondary" id="cancelImport">취소</button><button class="primary" id="analyzeButton">AI 분석 시작</button></div>
+</section>
+</div>
+
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
